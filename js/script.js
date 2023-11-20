@@ -5,12 +5,11 @@ Sommiamo i due numeri
 Stabiliamo se la somma dei due numeri è pari o dispari (usando un'altra funzione)
 Dichiariamo chi ha vinto.*/
 
-//!Palidroma:
-/*Chiedere all’utente di inserire una parola
-Creare una funzione per capire se la parola inserita è palindroma
-E' vietato usare split(), reverse() e simili.*/
 
-//! Faccio scegliere all'utente Pari o Dispari con il prompt e stamparlo in console
+
+//?PRIMO ESERCIZIO
+
+/*//! Faccio scegliere all'utente Pari o Dispari con il prompt e stamparlo in console
 
 const pariDispari=prompt('scegli pari o dispari')
 console.log(pariDispari);
@@ -57,4 +56,36 @@ if (sommaNumber(pariDispariGame) !== pariDispari){
     console.log('Pc win')
 }else if (sommaNumber(pariDispariGame) == pariDispari){
     console.log('User win')
+}*/
+
+
+//?SECONDO ESERCIZIO
+//!Palidroma:
+/*Chiedere all’utente di inserire una parola
+Creare una funzione per capire se la parola inserita è palindroma
+E' vietato usare split(), reverse() e simili.*/
+
+const wordUser=prompt('inserisci parola')
+
+let wordReverse=wordReverseFunction(wordUser);
+
+if (wordUser == wordReverse){
+    console.log('la parola è palindroma');
+} else {
+  console.log('la parola non è palindroma');
 }
+
+
+function wordReverseFunction (word){
+  let wordReverse = ''
+ 
+  let i = word.length -1;
+
+  while (i>= 0){
+    wordReverse += word[i];
+    i--
+  }
+  return wordReverse
+}
+
+
