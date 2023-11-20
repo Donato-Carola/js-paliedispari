@@ -9,7 +9,7 @@ Dichiariamo chi ha vinto.*/
 
 //?PRIMO ESERCIZIO
 
-/*//! Faccio scegliere all'utente Pari o Dispari con il prompt e stamparlo in console
+//! Faccio scegliere all'utente Pari o Dispari con il prompt e stamparlo in console
 
 const pariDispari=prompt('scegli pari o dispari')
 console.log(pariDispari);
@@ -21,7 +21,7 @@ console.log(NumberUser);
 //! Inizializzo la variabile pari a zero cosi da poter riutilizzarla per richiamre la funzione 
 let pcNumber=0
 
-//! creo la funzione per il numero random per il pc da 1a 5
+//! creo la funzione per il numero random per il pc da 1 a 5
 
 function randomNumber(randomNumberPc){
  randomNumberPc = (Math.floor((Math.random(1)*5)+1));
@@ -34,8 +34,9 @@ return randomNumberPc
 somma = randomNumber(pcNumber) + NumberUser
 console.log(somma)
 
+//?Prima prova sul codice finale
 
-//!inizializzo la variabile con stringa vuota per il risultato della funzione pari o dispari(DA RIVEDERE)
+/*//!inizializzo la variabile con stringa vuota per il risultato della funzione pari o dispari(DA RIVEDERE)
 let pariDispariGame = '';
 
 function sommaNumber(GameOver){
@@ -56,7 +57,31 @@ if (sommaNumber(pariDispariGame) !== pariDispari){
     console.log('Pc win')
 }else if (sommaNumber(pariDispariGame) == pariDispari){
     console.log('User win')
+}
+*/
+
+
+
+
+//? seconda prova sull'ultimo pezzo di codice, cioè rifare la funzione e la condizione
+
+/*function dispariPari(sommaPc){
+    if(sommaPc % 2 === 0){
+        return true 
+  }else{
+      return false
+  }
+  
+}
+
+if (dispariPari(somma)){
+    console.log('win User')
+}else{
+    console.log('win Pc')
 }*/
+
+
+
 
 
 //?SECONDO ESERCIZIO
@@ -65,7 +90,7 @@ if (sommaNumber(pariDispariGame) !== pariDispari){
 Creare una funzione per capire se la parola inserita è palindroma
 E' vietato usare split(), reverse() e simili.*/
 
-const wordUser=prompt('inserisci parola')
+/*const wordUser=prompt('inserisci parola')
 
 let wordReverse=wordReverseFunction(wordUser);
 
@@ -86,6 +111,6 @@ function wordReverseFunction (word){
     i--
   }
   return wordReverse
-}
+}*/
 
 
