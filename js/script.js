@@ -40,10 +40,10 @@ console.log(somma)
 let pariDispariGame = '';
 
 function sommaNumber(GameOver){
-    if(somma % 2 === 1){
-          console.log('dispari') 
+    if(somma % 2 === 0){
+          console.log('pari') 
     }else{
-        console.log('pari')
+        console.log('dispari')
     }
     return GameOver
 
@@ -53,8 +53,8 @@ sommaNumber(pariDispariGame)
 
 //!Faccio l'if per controllare chi ha vinto (DA RIVEDERE)
 
-if ((sommaNumber(pariDispariGame)) == pariDispari){
-    console.log('User win')
-}else{
+if (sommaNumber(pariDispariGame) !== pariDispari){
     console.log('Pc win')
+}else if (sommaNumber(pariDispariGame) == pariDispari){
+    console.log('User win')
 }
